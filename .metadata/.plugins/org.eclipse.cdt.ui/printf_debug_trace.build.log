@@ -1,0 +1,20 @@
+10:26:42 **** Incremental Build of configuration Debug for project printf_debug_trace ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "printf_debug_trace.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workset\Udemy_ARM_Cortex_STM32\printf_debug_trace\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="printf_debug_trace.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: printf_debug_trace.elf
+ 
+arm-none-eabi-size   printf_debug_trace.elf 
+arm-none-eabi-objdump -h -S  printf_debug_trace.elf  > "printf_debug_trace.list"
+arm-none-eabi-objcopy  -O binary  printf_debug_trace.elf  "printf_debug_trace.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12048	    120	   1600	  13768	   35c8	printf_debug_trace.elf
+Finished building: default.size.stdout
+ 
+Finished building: printf_debug_trace.bin
+ 
+Finished building: printf_debug_trace.list
+ 
+
+10:26:43 Build Finished. 0 errors, 0 warnings. (took 1s.152ms)
+

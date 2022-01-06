@@ -1,0 +1,27 @@
+13:09:53 **** Incremental Build of configuration Debug for project 05_21_OperationModes ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f303vctx.d" -MT"Startup/startup_stm32f303vctx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f303vctx.o" "../Startup/startup_stm32f303vctx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "05_21_OperationModes.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workset\Udemy_ARM_Cortex_STM32\05_21_OperationModes\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_21_OperationModes.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_21_OperationModes.elf
+ 
+arm-none-eabi-size   05_21_OperationModes.elf 
+arm-none-eabi-objdump -h -S  05_21_OperationModes.elf  > "05_21_OperationModes.list"
+arm-none-eabi-objcopy  -O binary  05_21_OperationModes.elf  "05_21_OperationModes.bin"
+   text	   data	    bss	    dec	    hex	filename
+   3812	    108	   1596	   5516	   158c	05_21_OperationModes.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_21_OperationModes.bin
+Finished building: 05_21_OperationModes.list
+ 
+ 
+13:10:47 **** Incremental Build of configuration Debug for project 05_21_OperationModes ****
+make -j8 all 
+arm-none-eabi-size   05_21_OperationModes.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3812	    108	   1596	   5516	   158c	05_21_OperationModes.elf
+Finished building: default.size.stdout
+ 
