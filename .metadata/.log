@@ -2113,3 +2113,42 @@ java.lang.NullPointerException
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2022-01-09 22:25:20.644 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-01-09 22:25:28.035
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-01-09 22:25:28.104
+!MESSAGE Log4j initialized with config file C:\Workset\Udemy_ARM_Cortex_STM32\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-01-09 22:25:40.212
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-01-09 22:38:02.707 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Workset\Udemy_ARM_Cortex_STM32
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-01-09 22:38:08.548
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-01-09 22:38:08.599
+!MESSAGE Log4j initialized with config file C:\Workset\Udemy_ARM_Cortex_STM32\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-01-09 22:38:18.934
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-01-09 22:38:53.855
+!MESSAGE Indexed 'access_levels' (3 sources, 55 headers) in 0.646 sec: 2,121 declarations; 2,948 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 1 1 2022-01-09 22:40:11.599
+!MESSAGE Successfully migrated launch configuration access_levels Debug
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-01-10 13:20:27.325
+!MESSAGE Indexed 'FreeRTOSTest' (26 sources, 87 headers) in 3.81 sec: 5,969 declarations; 37,347 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0046%)
